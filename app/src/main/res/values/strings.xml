@@ -7,4 +7,7 @@
     <string name="btnSubmit">Add Person</string>
     <string name="btnNxtScreen">Meet Your Group</string>
     <string name="title_activity_generate_group">generateGroup</string>
+    <string name="lblGroupIntro">Your group contains the following people: </string>
+    <string name="btnTrack">Track Your Group</string>
+    <string name="btnMessage">Message Your Group</string>
 </resources>
