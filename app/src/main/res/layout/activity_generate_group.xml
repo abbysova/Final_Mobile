@@ -34,7 +34,7 @@
                 android:layout_weight="1"
                 android:text="@string/lblGroupIntro"
                 android:textSize="18sp"
-                app:fontFamily="sans-serif" />
+                app:fontFamily="serif" />
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/groupList"
@@ -48,6 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:includeFontPadding="false"
                 android:text="@string/btnTrack" />
 
             <Button

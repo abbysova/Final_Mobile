@@ -10,4 +10,6 @@
     <string name="lblGroupIntro">Your group contains the following people: </string>
     <string name="btnTrack">Track Your Group</string>
     <string name="btnMessage">Message Your Group</string>
+    <string name="btnHome">Home</string>
+    <string name="btnBackGenerateGroup">Back to Generate Group</string>
 </resources>
