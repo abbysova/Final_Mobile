@@ -12,4 +12,6 @@
     <string name="btnMessage">Message Your Group</string>
     <string name="btnHome">Home</string>
     <string name="btnBackGenerateGroup">Back to Generate Group</string>
+    <string name="putTxt">Craft Message to the Group Here</string>
+    <string name="btnSend">Send Message</string>
 </resources>

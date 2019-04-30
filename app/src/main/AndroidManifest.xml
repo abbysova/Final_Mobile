@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".map"></activity>
+        <activity android:name=".message"></activity>
+        <activity android:name=".map" />
         <activity
             android:name=".generateGroup"
             android:label="@string/title_activity_generate_group"
