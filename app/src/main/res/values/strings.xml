@@ -14,4 +14,7 @@
     <string name="btnBackGenerateGroup">Back to Generate Group</string>
     <string name="putTxt">Craft Message to the Group Here</string>
     <string name="btnSend">Send Message</string>
+    <string name="receivedTxt">This is a sample message</string>
+    <string name="sendTxt">This is a sent sample message</string>
+    <string name="senderName">Abby</string>
 </resources>

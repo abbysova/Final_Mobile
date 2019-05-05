@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    android:paddingLeft="26dp"
+    android:paddingRight="60dp"
+    android:clipToPadding="false"
+    android:paddingEnd="60dp"
+    android:paddingStart="26dp">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:paddingBottom="4dp"
+        android:text="@string/senderName" />
+
+    <TextView
+        android:id="@+id/message_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:background="@drawable/received_message"
+        android:elevation="21dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="26dp"
+        android:paddingEnd="60dp"
+        android:paddingRight="60dp"
+        android:text="@string/receivedTxt"
+        android:textSize="18sp" />
+</RelativeLayout>
