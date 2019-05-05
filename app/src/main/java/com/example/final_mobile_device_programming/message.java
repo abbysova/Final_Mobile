@@ -35,14 +35,14 @@ public class message extends AppCompatActivity implements RoomListener {
     messagesView = (ListView) findViewById(R.id.messages_view);
         messagesView.setAdapter(MessageAdapter);
 
-    MemberData data = new MemberData(getRandomName();)
+    MemberData data = new MemberData(getRandomName());
 
     scaledrone = new Scaledrone(channelID, data);
         scaledrone.connect(new Listener() {
         @Override
         public void onOpen() {
             System.out.println("Scaledrone connection open");
-            scaledrone.subscribe(roomName, MainActivity.this);
+            scaledrone.subscribe(roomName, message.this);
         }
 
         @Override
@@ -120,7 +120,7 @@ class MemberData {
 
     }
 
-    public MemberData() {
+    public MemberData(String randomName) {
     }
 
     public String getName() {
