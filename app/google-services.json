@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "308789607920",
+    "firebase_url": "https://messaging-final-mdp.firebaseio.com",
+    "project_id": "messaging-final-mdp",
+    "storage_bucket": "messaging-final-mdp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308789607920:android:e75575ed887ea663",
+        "android_client_info": {
+          "package_name": "com.example.final_mobile_device_programming"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308789607920-a9dkor7o9jcsg003q16t61rinm3523qq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.final_mobile_device_programming",
+            "certificate_hash": "cb5d604b99c84ff4737927e3c568e0f444600724"
+          }
+        },
+        {
+          "client_id": "308789607920-0j4ne79br7usfa5dai4693mue8i570pv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaOO_2s24899BkLTs_geGz6YX_e7Nuwn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308789607920-0j4ne79br7usfa5dai4693mue8i570pv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
