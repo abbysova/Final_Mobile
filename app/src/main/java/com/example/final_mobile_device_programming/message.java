@@ -15,12 +15,13 @@ import com.scaledrone.lib.Room;
 import com.scaledrone.lib.RoomListener;
 import com.scaledrone.lib.Scaledrone;
 
-public class MainActivity extends AppCompatActivity implements RoomListener {
+
+public class message extends AppCompatActivity implements RoomListener {
     private String channelID = "O86HApJ3xsOaOg7f";
     private String roomName = "final";
     private EditText editText;
     private Scaledrone scaledrone;
-    private MessageAdapter messageAdapter;
+    private MessageAdapter MessageAdapter;
     private ListView messagesView;
 
     @Override
@@ -30,11 +31,11 @@ public class MainActivity extends AppCompatActivity implements RoomListener {
 
     editText = (EditText) findViewById(R.id.editText);
 
-    messageAdapter = new MessageAdapter(this);
+    MessageAdapter = new MessageAdapter(this);
     messagesView = (ListView) findViewById(R.id.messages_view);
-        messagesView.setAdapter(messageAdapter);
+        messagesView.setAdapter(MessageAdapter);
 
-    MemberData data = new MemberData(getRandomName(), getRandomColor());
+    MemberData data = new MemberData(getRandomName();)
 
     scaledrone = new Scaledrone(channelID, data);
         scaledrone.connect(new Listener() {
@@ -85,11 +86,11 @@ public class MainActivity extends AppCompatActivity implements RoomListener {
         try {
             final MemberData data = mapper.treeToValue(receivedMessage.getMember().getClientData(), MemberData.class);
             boolean belongsToCurrentUser = receivedMessage.getClientID().equals(scaledrone.getClientID());
-            final Message message = new Message(receivedMessage.getData().asText(), data, belongsToCurrentUser);
+            final user_message message = new user_message(receivedMessage.getData().asText(), data, belongsToCurrentUser);
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    messageAdapter.add(message);
+                    MessageAdapter.add(message);
                     messagesView.setSelection(messagesView.getCount() - 1);
                 }
             });
@@ -109,23 +110,14 @@ public class MainActivity extends AppCompatActivity implements RoomListener {
         );
     }
 
-    private String getRandomColor() {
-        Random r = new Random();
-        StringBuffer sb = new StringBuffer("#");
-        while(sb.length() < 7){
-            sb.append(Integer.toHexString(r.nextInt()));
-        }
-        return sb.toString().substring(0, 7);
-    }
 }
 
 class MemberData {
     private String name;
-    private String color;
 
     public MemberData(String name, String color) {
         this.name = name;
-        this.color = color;
+
     }
 
     public MemberData() {
@@ -135,15 +127,10 @@ class MemberData {
         return name;
     }
 
-    public String getColor() {
-        return color;
-    }
-
     @Override
     public String toString() {
         return "MemberData{" +
                 "name='" + name + '\'' +
-                ", color='" + color + '\'' +
                 '}';
     }
 }

@@ -17,4 +17,5 @@
     <string name="receivedTxt">This is a sample message</string>
     <string name="sendTxt">This is a sent sample message</string>
     <string name="senderName">Abby</string>
+    <item name="editText" type="id" />
 </resources>
