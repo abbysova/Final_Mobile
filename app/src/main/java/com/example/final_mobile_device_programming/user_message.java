@@ -23,4 +23,3 @@ public class user_message {
         return belongsToCurrentUser;
     }
 }
-}
