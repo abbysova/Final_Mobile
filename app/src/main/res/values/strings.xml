@@ -19,4 +19,5 @@
     <string name="senderName">Abby</string>
     <item name="editText" type="id" />
     <string name="title_maps">This is where you are: </string>
+    <string name="google_maps_key">AIzaSyD6v9LTNPqgnB53VFt43Z6cbJUZuR5HR5w</string>
 </resources>
