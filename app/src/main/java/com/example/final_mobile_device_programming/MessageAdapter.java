@@ -50,14 +50,14 @@ public class MessageAdapter extends BaseAdapter {
         user_message message = messages.get(i);
 
         if (message.isBelongsToCurrentUser()) {
-            convertView = messageInflater.inflate(R.layout.message_format, null);
-            holder.messageBody = (TextView) convertView.findViewById(R.id.message_body);
+            convertView = messageInflater.inflate(R.layout.activity_message, null);
+            holder.messageBody = (TextView) convertView.findViewById(R.id.sent_message_body);
             convertView.setTag(holder);
             holder.messageBody.setText(message.getText());
         } else {
-            convertView = messageInflater.inflate(R.layout.received_message, null);
+            convertView = messageInflater.inflate(R.layout.activity_message, null);
             holder.name = (TextView) convertView.findViewById(R.id.name);
-            holder.messageBody = (TextView) convertView.findViewById(R.id.message_body);
+            holder.messageBody = (TextView) convertView.findViewById(R.id.received_message_body);
             convertView.setTag(holder);
 
             holder.name.setText(message.getMemberData().getName());
