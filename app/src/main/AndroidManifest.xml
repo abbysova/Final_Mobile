@@ -11,7 +11,6 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".message" />
-        <activity android:name=".map" />
         <activity
             android:name=".generateGroup"
             android:label="@string/title_activity_generate_group"
@@ -26,18 +25,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- Firebase Messaging -->
-        <service android:name=".java.MyFirebaseMessagingService">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity
+            android:name=".map"
+            android:label="@string/title_maps">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </service>
-        <meta-data
-            android:name="firebase_messaging_auto_init_enabled"
-            android:value="false" />
-        <meta-data
-            android:name="firebase_analytics_collection_enabled"
-            android:value="false" />
+        </activity>
     </application>
 
 </manifest>

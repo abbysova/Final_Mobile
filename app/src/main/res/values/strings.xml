@@ -18,4 +18,5 @@
     <string name="sendTxt">This is a sent sample message</string>
     <string name="senderName">Abby</string>
     <item name="editText" type="id" />
+    <string name="title_maps">This is where you are: </string>
 </resources>
