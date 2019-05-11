@@ -32,9 +32,6 @@
                 android:id="@+id/received_message_body"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/name"
-                android:layout_alignStart="@+id/name"
-                android:layout_alignLeft="@+id/name"
                 android:background="@drawable/received_message"
                 android:elevation="21dp"
                 android:paddingHorizontal="16dp"
@@ -54,7 +51,8 @@
                 android:padding="10dp"
                 android:text="Placeholder message"
                 android:textColor="#fff"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                />
 
             <EditText
                 android:id="@+id/txtMessage"

@@ -8,7 +8,7 @@
     <string name="btnNxtScreen">Meet Your Group</string>
     <string name="title_activity_generate_group">generateGroup</string>
     <string name="lblGroupIntro">Your group contains the following people: </string>
-    <string name="btnTrack">Track Your Group</string>
+    <string name="btnTrack">Find your Location</string>
     <string name="btnMessage">Message Your Group</string>
     <string name="btnHome">Home</string>
     <string name="btnBackGenerateGroup">Back to Generate Group</string>
@@ -20,4 +20,5 @@
     <item name="editText" type="id" />
     <string name="title_maps">This is where you are: </string>
     <string name="google_maps_key">AIzaSyD6v9LTNPqgnB53VFt43Z6cbJUZuR5HR5w</string>
+    <string name="placeholder_message">Message goes here</string>
 </resources>
