@@ -49,9 +49,9 @@ public class map extends AppCompatActivity {
     }
 
     private void initUI() {
-        locate = (Button) findViewById(R.id.locate);
-        add = (Button) findViewById(R.id.add);
-        clear = (Button) findViewById(R.id.clear);
+        locate = (Button) findViewById(R.id.map_locate);
+        add = (Button) findViewById(R.id.map_add);
+        clear = (Button) findViewById(R.id.map_clear);
 
         locate.setOnClickListener(this);
         add.setOnClickListener(this);
@@ -75,7 +75,7 @@ public class map extends AppCompatActivity {
                     , 1);
         }
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_map);
         initUI();
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -98,13 +98,13 @@ public class map extends AppCompatActivity {
             setUpMap();
         }
 
-        LatLng shenzhen = new LatLng(22.5362, 113.9454);
-        gMap.addMarker(new MarkerOptions().position(shenzhen).title("Marker in Shenzhen"));
-        gMap.moveCamera(CameraUpdateFactory.newLatLng(shenzhen));
+        LatLng crosby = new LatLng(46.4822, 93.9578);
+        gMap.addMarker(new MarkerOptions().position(crosby ).title("Marker in crosby "));
+        gMap.moveCamera(CameraUpdateFactory.newLatLng(crosby));
     }
 
     private void setUpMap() {
-        gMap.setOnMapClickListener(this);// add the listener for click for amap object
+        gMap.setOnMapClickListener(this);
     }
 
     @Override

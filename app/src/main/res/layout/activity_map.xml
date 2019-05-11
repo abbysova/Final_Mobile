@@ -14,7 +14,7 @@
             android:id="@+id/ConnectStatusTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Map"
+            android:text="@string/map"
             android:gravity="center"
             android:textColor="#000000"
             android:textSize="21sp"
@@ -24,24 +24,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <Button
-            android:id="@+id/locate"
+            android:id="@+id/map_locate"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/map_locate"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="@string/map_locate" />
+
         <Button
-            android:id="@+id/add"
+            android:id="@+id/map_add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/map_add"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="@string/map_add" />
+
         <Button
-            android:id="@+id/clear"
+            android:id="@+id/map_clear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/map_clear"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="@string/map_clear" />
     </LinearLayout>
 
 

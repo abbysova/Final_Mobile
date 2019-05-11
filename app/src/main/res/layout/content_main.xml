@@ -25,27 +25,6 @@
             android:textSize="18sp"
             app:fontFamily="serif" />
 
-        <EditText
-            android:id="@+id/txtName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/txtNamelbl"
-            android:inputType="textPersonName"
-            android:text="@string/txtNamelbl"
-            app:fontFamily="serif" />
-
-        <EditText
-            android:id="@+id/phoneNum"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/txtPhonelbl"
-            android:inputType="phone"
-            android:text="@string/txtPhonelbl"
-            app:fontFamily="serif" />
-
         <Button
             android:id="@+id/btnSubmit"
             android:layout_width="match_parent"
