@@ -21,4 +21,7 @@
     <string name="title_maps">This is where you are: </string>
     <string name="google_maps_key">AIzaSyD6v9LTNPqgnB53VFt43Z6cbJUZuR5HR5w</string>
     <string name="placeholder_message">Message goes here</string>
+    <string name="map_add">Add</string>
+    <string name="map_locate">Locate</string>
+    <string name="map_clear">Clear</string>
 </resources>
