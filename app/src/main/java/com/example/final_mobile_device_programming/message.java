@@ -1,16 +1,14 @@
 package com.example.final_mobile_device_programming;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ListView;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.scaledrone.lib.Listener;
-import com.scaledrone.lib.Member;
 import com.scaledrone.lib.Room;
 import com.scaledrone.lib.RoomListener;
 import com.scaledrone.lib.Scaledrone;
@@ -27,12 +25,13 @@ public class message extends AppCompatActivity implements RoomListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
  super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_main);
+    setContentView(R.layout.activity_message);
+
 
     editText = (EditText) findViewById(R.id.editText);
 
     MessageAdapter = new MessageAdapter(this);
-    messagesView = (ListView) findViewById(R.id.messages_view);
+    messagesView = (ListView) findViewById(R.id.txtMessage);
         messagesView.setAdapter(MessageAdapter);
 
     MemberData data = new MemberData(getRandomName());
